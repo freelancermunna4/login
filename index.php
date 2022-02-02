@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION['user'])) {
+    header("location:index.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +21,6 @@
         <input type="password" name = "password" placeholder="password">
         <input type="submit" name = "submit" value="Login">
     </form>
-
 
 
 
